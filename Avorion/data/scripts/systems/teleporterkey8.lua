@@ -15,7 +15,7 @@ function getHyperRecharge(seed, rarity)
     math.randomseed(seed)
 	randomx = getInt(0, 9)
 	number = rarity.value * 8
-	number = number + randomx --40 max 49
+	number = number + randomx --40 max 45
 	number = number / 100
 	
     return -number
@@ -28,7 +28,7 @@ function getVelocity(seed, rarity)
 	randomx = math.random() * 15
 	roundx = round(randomx)
 	number = rarity.value * 4
-	number = number + roundx  -- 15 max 30
+	number = number + roundx  -- 15 max 25
 	number = number / 100
 
     return number
